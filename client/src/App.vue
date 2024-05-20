@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Store from "./components/Store.vue";
 import Footer from "./components/Footer.vue";
-import { ig, coffee, git, linkedIn, folio, script } from "./assets/index";
+import { ig, coffee, git, linkedIn, folio, script, npm } from "./assets/index";
 let portfolio = {
   name: "Portfolio",
   disc: "Welcome to my creative universe! Explore my portfolio to witness the visual stories and projects that define my passion and dedication. Let's turn visions into realities. 🎨📂",
@@ -11,7 +11,7 @@ let portfolio = {
 let resume = {
   name: "Resume",
   disc: "Curious about my professional journey? Dive into my resume to explore my career milestones, skills, and experiences. Let's connect the dots and create something amazing together. 🚀🌟",
-  link: "https://drive.google.com/file/d/1lVDyPOTXxwtghQj9qBmWjTp0RDVn5bEl/view?usp=sharing",
+  link: "/resume.pdf",
   logo: script,
 };
 let buyCoffee = {
@@ -37,6 +37,12 @@ let linkedin = {
   disc: "Greetings! This is my LinkedIn lair—where professionalism meets playful pizzazz. 🎉 Let's link up and sprinkle some fun into the serious side of careers! 🚀🎈",
   link: "https://www.linkedin.com/in/obinna-okeke-0a7445173/",
   logo: linkedIn,
+};
+let NPM = {
+  name: "Node Packages",
+  disc: "Hi again! This is my NPM account link, where the node packages I created for making development easier are. Feel free to download and have a great time coding",
+  link: "https://www.npmjs.com/~mr_david",
+  logo: npm,
 };
 </script>
 
@@ -68,6 +74,12 @@ let linkedin = {
         :description="linkedin.disc"
         :url="linkedin.link"
         :logo="linkedin.logo"
+      />
+      <Store
+        :title="NPM.name"
+        :description="NPM.disc"
+        :url="NPM.link"
+        :logo="NPM.logo"
       />
       <Store
         :title="instagram.name"

@@ -6,9 +6,11 @@ import folio from './portfolio.svg'
 import script from './resume.svg'
 import gmail from './gmail.svg'
 import wapp from './wapp.svg'
+import npm from './npm.png'
 
 
 export{
+    npm,
     ig,
     coffee,
     git,
